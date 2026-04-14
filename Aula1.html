@@ -1,0 +1,189 @@
+<!-- Aula 1
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Olá Mundo</h1>
+<h2> Titulo 2</h2>
+<h3> Titulo 3</h3>
+<h4> Titulo 4</h4>
+<h5> Titulo 5</h5>
+<h6> Titulo 6</h6>
+
+<h2>Listas Não Ordenadas</h2>
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ul>
+
+<h2> Listas Ordenadas</h2>
+<ol>
+<li> Item 4</li>
+<li> Item 5</li>
+<li> Item 6</li>
+</ol>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link</title>
+</head>
+<body>
+    <a href="https://www.google.com/" >Google</a>
+    <br>
+    <a href="teste.com">Teste</a>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+<body>
+    <h2>Imagens</h2>
+<img src="Imagens/Foto Profissional.png" alt="Imagem Jhonatan" title="Foto do jhonatan" width="50%"
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+</head>
+<body>
+    <h2>Tabela</h2>
+
+    <table width="15%" border="2">
+        <tr>
+            <th rowspan="2">Nome</th>
+            <th colspan="2">RU</th>
+            <th>Cidade</th>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>1234567</td>
+            <td>Campinas</td>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>2345678</td>
+            <td>São Paulo</td>
+        </tr>
+    </table>
+</body>
+</html> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h2>Formulário Jhonatan</h2>
+    <form action="" method="post">
+        <table>
+            <caption>Formulário Sobre Faculdade:</caption>
+            <Details><Summary>Ver mais informações</Summary>
+                <p>Abcde</p>
+            </Details>
+            <tr>
+                <th><label for="nome">Nome:</label></th>
+                <td><input type="text" name="nome" id="nome" required></td>  
+            </tr>
+            <tr>
+                <th><label for="email">E-Mail:</label></th>
+                <td><input type="email" name="email" id="email" required></td>
+            </tr>
+            <tr>
+                <th><label for="mensagem">Digite sua Mensagem</label></th>
+                <td><textarea name="msg" id="mensagem" rows="5" cols="40"></textarea></td>
+            </tr>
+            <tr>
+                <td><button type="reset" >Cancelar</button></td>
+                <td><button type="submit">Enviar</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulary</title>
+</head>
+<body>
+    <h2>Formulário sobre Faculdade</h2>
+    <form action="" method="post">
+        <fieldset>
+            <div class="campo">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu Nome:" size="50" maxlength="100" required>  
+            </div>
+            <div class="campo">
+                <label for="email">E-Mail:</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu E-Mail" size="50" required>
+            </div>
+            <div class="campo">
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua Senha" size="50" maxlength="16" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Linguagem que tem Interesse</legend>
+            <div class="campo">
+                <label><input type="checkbox" name="linguagem[]" value="c++">C++</label>
+                <label><input type="checkbox" name="linguagem[]" value="php">PHP</label>
+                <label><input type="checkbox" name="linguagem[]" value="delphi">Delphi</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Qual Curso irá escolher?</legend>
+            <div class="campo">
+                <label><input type="radio" name="curso" value="c++">C++</label>
+                <label><input type="radio" name="curso" value="php">PHP</label>
+                <label><input type="radio" name="curso" value="delphi">Delphi</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Escola</legend>
+            <label for="escola">Escolha a sua Escola:</label>
+            <div class="campo">
+                <select name="escola" id="escola">
+                <option value="Campinas">Campinas</option>
+                <option value="Rio Preto">Rio Preto</option>
+                <option value="São Paulo">São Paulo</option>
+                </select>
+            </div>
+        </fieldset>
+        
+            <div class="botoes">
+                <button type="reset" >Cancelar</button>
+                <button type="submit">Enviar</button>
+            </div>
+        
+    </form>
+</body>
+</html>
